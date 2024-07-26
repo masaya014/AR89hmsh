@@ -37,7 +37,7 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="3 3 3"
+                    scale="10 10 10"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
@@ -48,4 +48,7 @@
             <a-entity camera></a-entity>
         </a-scene>
     </body>
+    <script>
+        document.querySelector("a-scene").renderer.gammaOutput=ture;
+    </script>
 </html>
